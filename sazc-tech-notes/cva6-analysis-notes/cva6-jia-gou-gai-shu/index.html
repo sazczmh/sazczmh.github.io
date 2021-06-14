@@ -889,15 +889,18 @@ riscv<span class="token punctuation">:</span><span class="token punctuation">:</
 </ul>
 </li>
 <li><strong>Load Store Unit</strong><ul>
-<li>加载储存单元主要服务于数据的加载与存储，但因cva6的多层级缓存与虚拟地址访存特性，需要数据转换后备缓冲区DTLB、硬件页表遍历器PTW、内存管理单元MMU等模块。<div align="center" style="zoom:60%">
+<li>加载储存单元主要服务于数据的加载与存储，但因cva6的多层级缓存与虚拟地址访存特性，需要数据转换后备缓冲区DTLB、硬件页表遍历器PTW、内存管理单元MMU等模块。</li>
+</ul>
+</li>
+</ul>
+<div align="center" style="zoom:60%">
 <img src="/sazc-tech-notes/cva6-analysis-notes/cva6-jia-gou-gai-shu/LSU_unit.png">
 </div>
 <div align="center" style="zoom:50%">
 <img src="/sazc-tech-notes/cva6-analysis-notes/cva6-jia-gou-gai-shu/MMU_Unit.png">
-</div></li>
-</ul>
-</li>
-</ul>
+</div>
+
+
 <h2 id="指令提交阶段-Commit"><a href="#指令提交阶段-Commit" class="headerlink" title="指令提交阶段-Commit"></a>指令提交阶段-Commit</h2><p>提交阶段是cva6的6级流水线的最后一个阶段，功能主要是写CSR寄存器、提交存储以及寄存器的回写。</p>
 
                 
@@ -1441,6 +1444,13 @@ riscv<span class="token punctuation">:</span><span class="token punctuation">:</
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
